@@ -9,19 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyTaskBeta">
-        <activity android:name=".FlashActivity">
+        <activity android:name=".ui.RegistrationActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.SignInActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity android:name=".ui.AddCourseActivity" >
+
+        </activity>
+        <activity android:name=".ui.CourseDetailsActivity" />
+        <activity
+            android:name=".ui.CourseListActivity"
+            android:label="@string/title_activity_course_list"
+            android:theme="@style/Theme.DailyTaskBeta.NoActionBar" />
+        <activity android:name=".ui.ClassListActivity" />
+        <activity
+            android:name=".ui.FlashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity">
+
         </activity>
     </application>
 

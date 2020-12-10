@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddCourseActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginBottom="5dp"
+        android:text="Subject Name" />
+
+    <EditText
+        android:id="@+id/course_name_add_course"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:hint="@string/course" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:text="From Time" />
+
+    <EditText
+        android:id="@+id/class_start_add_course"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:hint="From Time" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="End Time" />
+
+    <EditText
+        android:id="@+id/end_time_addcourse"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:hint="End Time" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Day" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textfield_round"
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/day_addcourse"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Day"
+        android:paddingHorizontal="10dp"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Teacher Initial" />
+
+    <EditText
+        android:id="@+id/teacher_initial_addcourse"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:hint="Teacher Initial" />
+    <Button
+        android:id="@+id/button_add_course"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="ADD COURSE"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#448AFF"
+        />
+</LinearLayout>

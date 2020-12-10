@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#689AED"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Physics II - MKM"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8:30 AM - 10:00 AM"
+                android:fontFamily="monospace"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Sunday, Tuesday, Thursday"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+             />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#00B85E"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Computer Fundamentals - SSA"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#EDEDED"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10:00 AM - 11:30 AM"
+                android:fontFamily="monospace"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Sunday, Tuesday, Thursday"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#FF825B"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Physics II - SAH"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#EDEDED"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8:30 AM - 10:00 AM"
+                android:fontFamily="monospace"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Sunday, Tuesday, Thursday"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/button_add_course"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="ADD COURSE"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#448AFF"
+        />
+</LinearLayout>

@@ -1,10 +1,12 @@
-package com.siddiqei.dailytaskbeta;
+package com.siddiqei.dailytaskbeta.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.siddiqei.dailytaskbeta.R;
 
 public class FlashActivity extends AppCompatActivity {
 
