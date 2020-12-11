@@ -1,15 +1,24 @@
 package com.siddiqei.dailytaskbeta.model;
 
 public class ClassListModel {
-    String name,time,days;
+    String name,time,days, teacher;
 
     public ClassListModel() {
     }
 
-    public ClassListModel(String name, String time, String days) {
+    public ClassListModel(String name, String time, String days, String teacher) {
         this.name = name;
         this.time = time;
         this.days = days;
+        this.teacher= teacher;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
     }
 
     public String getName() {

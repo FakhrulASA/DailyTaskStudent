@@ -11,11 +11,7 @@
         android:theme="@style/Theme.DailyTaskBeta">
         <activity android:name=".ui.RegistrationActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ui.SignInActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"></activity>

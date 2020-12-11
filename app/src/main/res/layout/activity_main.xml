@@ -23,6 +23,7 @@
             android:layout_marginBottom="5dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
+                android:id="@+id/class_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -63,6 +64,7 @@
             android:layout_marginLeft="10dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
+                android:id="@+id/ebook_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -106,6 +108,7 @@
             android:layout_marginBottom="5dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
+                android:id="@+id/notice_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -146,6 +149,7 @@
             android:layout_marginLeft="10dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
+                android:id="@+id/note_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -189,6 +193,7 @@
             android:layout_marginBottom="5dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
+                android:id="@+id/event_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -230,6 +235,7 @@
             app:cardCornerRadius="5dp">
 
             <LinearLayout
+                android:id="@+id/contact_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
