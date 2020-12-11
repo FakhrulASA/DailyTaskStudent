@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F4FDFF"
     tools:context=".ui.ClassListActivity">
 
 
@@ -12,6 +14,7 @@
         android:id="@+id/course_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#F4FDFF"
         android:layout_weight="1">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -23,8 +26,9 @@
       android:layout_marginTop="10dp"
       android:text="ADD COURSE"
       android:layout_marginBottom="8dp"
-      android:layout_width="match_parent"
+      android:drawableEnd="@drawable/ic_baseline_add_box_24"
+      android:layout_width="wrap_content"
       android:fontFamily="@font/aclonica"
-      android:backgroundTint="#448AFF"
+      android:backgroundTint="#E53935"
       />
 </LinearLayout>

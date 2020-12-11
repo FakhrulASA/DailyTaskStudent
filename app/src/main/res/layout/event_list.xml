@@ -13,56 +13,58 @@
         android:layout_marginBottom="5dp"
         app:cardUseCompatPadding="true"
         app:contentPadding="2dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="#B0FF7E"
         android:layout_marginLeft="10dp"
-        >
+        app:cardCornerRadius="5dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+
             android:orientation="vertical">
 
 
 
             <TextView
-                android:id="@+id/subject_text"
+                android:id="@+id/event_title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Physics II - SAH"
-                android:fontFamily="@font/aclonica"
-                android:padding="10dp"
-                android:background="#E53935"
-                android:textAlignment="textStart"
-                android:textSize="14sp"
-                android:textColor="#FFFFFF"
-        />
-            <TextView
-                android:id="@+id/time_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="8:30 AM - 10:00 AM"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="7dp"
-                android:fontFamily="sans-serif-medium"
+                android:background="#00C853"
+                android:paddingVertical="10dp"
+                android:fontFamily="@font/aclonica"
                 android:textAlignment="textStart"
-                android:background="#FFFFFF"
                 android:textSize="13sp"
 
-                android:textColor="#E53935"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Time"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="textStart"
+                android:textSize="13sp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="10dp"
+                android:textColor="#3E3E3E"
                 />
 
             <TextView
-                android:id="@+id/day_text"
+                android:id="@+id/event_descriptiton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFFFF"
-                android:fontFamily="@font/capriola"
-                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
                 android:text="Sunday, Tuesday, Thursday"
                 android:textAlignment="textStart"
+                android:paddingHorizontal="10dp"
                 android:textColor="#000000"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

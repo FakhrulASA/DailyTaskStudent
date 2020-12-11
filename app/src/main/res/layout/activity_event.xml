@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NoticeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF6D00"
+        android:textSize="19sp"
+        android:paddingVertical="10dp"
+        android:paddingLeft="15dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:text="Upcomming Events" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
