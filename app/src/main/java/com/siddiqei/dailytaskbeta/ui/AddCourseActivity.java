@@ -27,6 +27,7 @@ public class AddCourseActivity extends AppCompatActivity {
     Spinner classDay;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore firebaseFirestore;
+    String userid;
     String[] days={"Friday","Saturday","Sunday","Moneday","Tuesday","Wednesday","Thursday"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +37,11 @@ public class AddCourseActivity extends AppCompatActivity {
         teacherInitial=findViewById(R.id.teacher_initial_addcourse);
         clasStarts=findViewById(R.id.class_start_add_course);
         classEnds=findViewById(R.id.end_time_addcourse);
+        firebaseAuth=FirebaseAuth.getInstance();
         classDay=findViewById(R.id.day_addcourse);
         Button button=findViewById(R.id.button_add_course);
         firebaseFirestore=FirebaseFirestore.getInstance();
-
+         userid=firebaseAuth.getCurrentUser().getUid();
         ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(getApplicationContext(),   android.R.layout.simple_spinner_item, days);
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); // The drop down view
         classDay.setAdapter(spinnerArrayAdapter);
@@ -53,13 +55,13 @@ public class AddCourseActivity extends AppCompatActivity {
                 course.put("classEnds",classEnds.getText().toString());
                 course.put("classDay",classDay.getSelectedItem().toString());
 
-                firebaseFirestore.collection("courselist")
+                firebaseFirestore.collection("courselist").document(userid).collection("Course")
                         .add(course)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
                                 Toast.makeText(AddCourseActivity.this,"Successfully Added",Toast.LENGTH_LONG).show();
-                                startActivity(new Intent(AddCourseActivity.this,CourseListActivity.class));
+                                startActivity(new Intent(AddCourseActivity.this,ClassListActivity.class));
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {

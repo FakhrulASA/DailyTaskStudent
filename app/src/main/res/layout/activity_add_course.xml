@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="20dp"
     android:layout_height="match_parent"
     tools:context=".ui.AddCourseActivity">
@@ -11,6 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
         android:textColor="#4A5071"
         android:layout_marginBottom="5dp"
         android:text="Subject Name" />
@@ -27,6 +29,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
         android:textColor="#4A5071"
         android:layout_marginBottom="5dp"
         android:paddingTop="10dp"
@@ -44,6 +47,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+
         android:textColor="#4A5071"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
@@ -62,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#4A5071"
+        android:fontFamily="@font/aclonica"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:text="Day" />
@@ -84,6 +90,7 @@
         android:textColor="#4A5071"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/aclonica"
         android:text="Teacher Initial" />
 
     <EditText
@@ -99,9 +106,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/aclonica"
         android:text="ADD COURSE"
         android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:backgroundTint="#448AFF"
         />
 </LinearLayout>

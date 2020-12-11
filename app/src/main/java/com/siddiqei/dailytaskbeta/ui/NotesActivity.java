@@ -18,59 +18,57 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.siddiqei.dailytaskbeta.R;
 import com.siddiqei.dailytaskbeta.adapter.ClassAdapter;
+import com.siddiqei.dailytaskbeta.adapter.NoteAdapter;
 import com.siddiqei.dailytaskbeta.model.ClassListModel;
+import com.siddiqei.dailytaskbeta.model.NoteModel;
 
 import java.util.ArrayList;
 
-public class ClassListActivity extends AppCompatActivity {
-    RecyclerView class_recycle;
-    Button addCourse;
-    ClassAdapter classAdapter;
-    FirebaseAuth  firebaseAuth;
-    ArrayList<ClassListModel> posts=new ArrayList<>();
+public class NotesActivity extends AppCompatActivity {
+    FirebaseAuth firebaseAuth;
+    ArrayList<NoteModel> posts=new ArrayList<>();
+    NoteAdapter noteAdapter;
+    RecyclerView recyclerView;
+    Button add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_list);
-        class_recycle=findViewById(R.id.course_recycler);
-        addCourse=findViewById(R.id.button_add_course);
+        setContentView(R.layout.activity_notes);
         firebaseAuth=FirebaseAuth.getInstance();
-        addCourse.setOnClickListener(new View.OnClickListener() {
+        String userid=firebaseAuth.getCurrentUser().getUid();
+        recyclerView=findViewById(R.id.note_recycler);
+        add=findViewById(R.id.button_add_note);
+        add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),AddCourseActivity.class));
+                startActivity(new Intent(getApplicationContext(),AddNotesActivity.class));
             }
         });
-        String userid=firebaseAuth.getCurrentUser().getUid();
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        db.collection("courselist").document(userid).collection("Course")
+        db.collection("courselist").document(userid).collection("notes")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                ClassListModel classListModel=new ClassListModel();
-                                classListModel.setName(document.getData().get("courseName").toString()+"-"+document.getData().get("teacherInitial").toString());
-                                classListModel.setDays(document.getData().get("classDay").toString());
-                                classListModel.setTime(document.getData().get("clasStarts").toString()+"-"+document.getData().get("classEnds").toString());
-                                classListModel.setTeacher("");
+                                NoteModel classListModel=new NoteModel();
+                                classListModel.setNote(document.getData().get("note").toString());
+                                classListModel.setTitle(document.getData().get("title").toString());
                                 posts.add(classListModel);
 
                             }
 
-                            classAdapter = new ClassAdapter(getApplicationContext(),posts);
+                            noteAdapter = new NoteAdapter(getApplicationContext(),posts);
                             GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),1);
-                            class_recycle.setLayoutManager(gridLayoutManager);
-                            class_recycle.setAdapter(classAdapter);
+                            recyclerView.setLayoutManager(gridLayoutManager);
+                            recyclerView.setAdapter(noteAdapter);
                         } else {
 
                         }
                     }
                 });
-
-
-
 
     }
 }

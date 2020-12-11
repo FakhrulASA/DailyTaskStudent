@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.EbookActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="2dp"
+        app:cardBackgroundColor="#FF6F00"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:id="@+id/book1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/title_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Electrical And Electronic Circuit"
+                android:fontFamily="@font/aclonica"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:id="@+id/note_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="By Alexandar Sadiku"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Physics and Math"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="2dp"
+        app:cardBackgroundColor="#43A047"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:id="@+id/book2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/title_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Computer Programming and Introduction"
+                android:fontFamily="@font/aclonica"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:id="@+id/note_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="By Stex Bubs"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Programming"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="2dp"
+        app:cardBackgroundColor="#D81B60"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:id="@+id/book3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/title_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C Language Tutorial"
+                android:fontFamily="@font/aclonica"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:id="@+id/note_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="By Gordon Dodrill"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="C Programming"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="2dp"
+        app:cardBackgroundColor="#1E88E5"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:id="@+id/book4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/title_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Inroduction to English Literature"
+                android:fontFamily="@font/aclonica"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:id="@+id/note_list_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="By ALEX PREMINGER "
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="English Literature, English Writing"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

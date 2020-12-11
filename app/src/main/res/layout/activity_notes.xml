@@ -3,28 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:gravity="center"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.ClassListActivity">
+    tools:context=".ui.NotesActivity">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/course_recycler"
+        android:id="@+id/note_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-  <Button
-      android:id="@+id/button_add_course"
-      android:layout_height="wrap_content"
-      android:layout_marginHorizontal="30dp"
-      android:layout_marginTop="10dp"
-      android:text="ADD COURSE"
-      android:layout_marginBottom="8dp"
-      android:layout_width="match_parent"
-      android:fontFamily="@font/aclonica"
-      android:backgroundTint="#448AFF"
-      />
+    <Button
+        android:id="@+id/button_add_note"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="ADD NOTE"
+        android:drawableEnd="@drawable/ic_baseline_note_add_24"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#FF5252"
+        />
 </LinearLayout>
