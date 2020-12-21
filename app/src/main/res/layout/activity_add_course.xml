@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
+        android:textColor="@color/black"
         android:paddingHorizontal="10dp"
         android:hint="@string/course" />
     <TextView
@@ -40,6 +41,7 @@
         android:background="@drawable/textfield_round"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:paddingVertical="10dp"
         android:paddingHorizontal="10dp"
         android:hint="From Time" />
@@ -60,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
+        android:textColor="@color/black"
         android:paddingHorizontal="10dp"
         android:hint="End Time" />
     <TextView
@@ -80,6 +83,7 @@
         android:id="@+id/day_addcourse"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:textColor="@color/black"
         android:hint="Day"
         android:paddingHorizontal="10dp"
         />
@@ -89,6 +93,7 @@
         android:layout_height="wrap_content"
         android:textColor="#4A5071"
         android:layout_marginBottom="5dp"
+
         android:layout_marginTop="10dp"
         android:fontFamily="@font/aclonica"
         android:text="Teacher Initial" />
@@ -99,11 +104,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
+        android:textColor="@color/black"
         android:paddingHorizontal="10dp"
         android:hint="Teacher Initial" />
     <Button
         android:id="@+id/button_add_course"
         android:layout_height="wrap_content"
+
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/aclonica"

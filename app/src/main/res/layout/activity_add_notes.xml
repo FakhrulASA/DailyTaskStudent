@@ -7,6 +7,7 @@
     android:gravity="center"
     android:padding="20dp"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".ui.AddNotesActivity">
 
     <TextView
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
         android:hint="Course/Topic/Problem/Date" />
     <TextView
 
@@ -52,6 +54,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:minLines="4"
+        android:textColor="@color/black"
         android:paddingHorizontal="10dp"
         android:hint="Write Something" />
     <Button
@@ -63,6 +66,7 @@
         android:drawableEnd="@drawable/ic_baseline_note_add_24"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:backgroundTint="#FF5252"
         />

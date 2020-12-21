@@ -56,6 +56,7 @@ public class NotesActivity extends AppCompatActivity {
                                 NoteModel classListModel=new NoteModel();
                                 classListModel.setNote(document.getData().get("note").toString());
                                 classListModel.setTitle(document.getData().get("title").toString());
+                                classListModel.setId(document.getId());
                                 posts.add(classListModel);
 
                             }

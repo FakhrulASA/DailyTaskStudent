@@ -23,6 +23,7 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
         android:text="ADD NOTE"
+        android:textColor="@color/white"
         android:drawableEnd="@drawable/ic_baseline_note_add_24"
         android:layout_marginBottom="8dp"
         android:layout_width="wrap_content"

@@ -50,6 +50,7 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.ViewHolder> 
                   intent.putExtra("NAME",posts.get(position).getName());
                   intent.putExtra("TIME",posts.get(position).getTime());
                   intent.putExtra("DAY",posts.get(position).getDays());
+                  intent.putExtra("ID",posts.get(position).getId());
                   intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                   context.startActivity(intent);
               }

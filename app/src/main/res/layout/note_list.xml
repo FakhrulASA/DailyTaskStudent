@@ -50,6 +50,15 @@
                 android:textColor="#000000"
                 android:textSize="13sp"
                 />
+            <Button
+                android:id="@+id/delete_note"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#F4511E"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="delete note" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

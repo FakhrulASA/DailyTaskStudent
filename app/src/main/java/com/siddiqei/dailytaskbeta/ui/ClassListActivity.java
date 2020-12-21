@@ -51,9 +51,11 @@ public class ClassListActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 ClassListModel classListModel=new ClassListModel();
+
                                 classListModel.setName(document.getData().get("courseName").toString()+"-"+document.getData().get("teacherInitial").toString());
                                 classListModel.setDays(document.getData().get("classDay").toString());
                                 classListModel.setTime(document.getData().get("clasStarts").toString()+"-"+document.getData().get("classEnds").toString());
+                                classListModel.setId(document.getId());
                                 classListModel.setTeacher("");
                                 posts.add(classListModel);
 
