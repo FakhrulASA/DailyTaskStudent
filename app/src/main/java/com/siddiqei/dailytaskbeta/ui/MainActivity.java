@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.siddiqei.dailytaskbeta.R;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout classLayout,ebookLayout,noteLayout,noticelayout,eventLayout;
+    LinearLayout classLayout,ebookLayout,noteLayout,noticelayout,eventLayout, layoutPhone;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 return true;
-
+            case R.id.profile:
+                startActivity(new Intent(getApplicationContext(),Profile.class));
+                return true;
+            case R.id.about:
+                startActivity(new Intent(getApplicationContext(),About.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -54,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
        noteLayout=findViewById(R.id.note_layout);
        noticelayout=findViewById(R.id.notice_layout);
        eventLayout=findViewById(R.id.event_layout);
+       layoutPhone=findViewById(R.id.contact_layout);
 
        classLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +90,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), EventActivity.class));
+            }
+        });
+        layoutPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),PhoneNumber.class));
             }
         });
     }

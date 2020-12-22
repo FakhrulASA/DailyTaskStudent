@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ED6D45"
+    android:layout_height="match_parent"
+    tools:context=".ui.Profile">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#039BE5"
+                android:textSize="13sp"
+                android:fontFamily="@font/capriola"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#353535"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Name" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#039BE5"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/capriola"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/email_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#353535"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Email" />
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#039BE5"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/capriola"
+                android:text="Phone Number" />
+
+            <TextView
+                android:id="@+id/phone_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#353535"
+                android:fontFamily="sans-serif"
+                android:text="Phone" />
+
+            <Button
+                android:id="@+id/editprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF2D56"
+                android:textStyle="bold"
+                android:text="EDIT PROFILE" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -16,7 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyTaskBeta">
-        <activity android:name=".Alarm.AlarmActivity"></activity>
+        <activity android:name=".ui.AddValue"></activity>
+        <activity android:name=".ui.PhoneNumber" />
+        <activity android:name=".ui.About" />
+        <activity android:name=".ui.EditProfile" />
+        <activity android:name=".ui.Profile" />
+        <activity android:name=".Alarm.AlarmActivity" />
         <activity android:name=".ui.EventActivity" />
         <activity android:name=".ui.NoticeActivity" />
         <activity android:name=".ui.ShowEbook" />

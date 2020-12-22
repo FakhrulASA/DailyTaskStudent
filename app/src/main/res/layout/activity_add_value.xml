@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".AddValue">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addname"
+        android:hint="name"
+        android:background="@drawable/textfield_round"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addphone"
+        android:background="@drawable/textfield_round"
+        android:padding="10dp"
+        android:hint="phone"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2979FF"
+        android:text="Add Number"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+</LinearLayout>
