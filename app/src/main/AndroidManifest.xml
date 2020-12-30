@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DailyTaskBeta">
+        android:theme="@style/Theme.Design.Light">
         <activity android:name=".ui.AddValue"></activity>
         <activity android:name=".ui.PhoneNumber" />
         <activity android:name=".ui.About" />

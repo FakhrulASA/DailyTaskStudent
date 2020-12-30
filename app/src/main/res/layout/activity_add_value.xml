@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/addname"
         android:hint="name"
+        android:textColor="@color/black"
         android:background="@drawable/textfield_round"
         android:layout_marginBottom="10dp"
         android:padding="10dp"
@@ -27,6 +28,7 @@
         android:id="@+id/addphone"
         android:background="@drawable/textfield_round"
         android:padding="10dp"
+        android:textColor="@color/black"
         android:hint="phone"
         android:textSize="15sp"/>
 
