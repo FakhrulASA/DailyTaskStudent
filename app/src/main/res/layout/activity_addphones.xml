@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ui.Addphones">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Add Number"
+        android:textAlignment="center"
+        android:textColor="#536DFE"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:textColor="#4A5071"
+        android:layout_marginBottom="5dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/note_title2"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
+        android:hint="Name/Initial" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:fontFamily="@font/aclonica"
+        android:layout_height="wrap_content"
+        android:textColor="#4A5071"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:text="Number" />
+
+    <EditText
+        android:id="@+id/note_note2"
+        android:background="@drawable/textfield_round"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:paddingHorizontal="10dp"
+        android:hint="Number" />
+    <Button
+        android:id="@+id/button_add_note2"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="ADD Number   "
+        android:drawableEnd="@drawable/ic_baseline_note_add_24"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#FF5252"
+        />
+</LinearLayout>

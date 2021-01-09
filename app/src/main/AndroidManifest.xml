@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light">
-        <activity android:name=".ui.AddValue"></activity>
+        <activity android:name=".ui.Addphones"></activity>
+        <activity android:name=".ui.PhoneNumberMain" />
+        <activity android:name=".ui.AddValue" />
         <activity android:name=".ui.PhoneNumber" />
         <activity android:name=".ui.About" />
         <activity android:name=".ui.EditProfile" />
