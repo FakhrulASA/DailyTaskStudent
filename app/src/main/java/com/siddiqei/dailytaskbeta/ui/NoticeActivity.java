@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -22,11 +24,12 @@ import com.siddiqei.dailytaskbeta.model.NoticeModel;
 
 import java.util.ArrayList;
 
-public class NoticeActivity extends AppCompatActivity {
+public class NoticeActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
     FirebaseAuth firebaseAuth;
     ArrayList<NoticeModel> posts=new ArrayList<>();
     NoticeAdapter noticeAdapter;
     RecyclerView recyclerView;
+    SwipeRefreshLayout swipeRefreshLayout;
     Button add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,8 @@ public class NoticeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notice);
         firebaseAuth=FirebaseAuth.getInstance();
         recyclerView=findViewById(R.id.rec_notice);
+        swipeRefreshLayout=findViewById(R.id.srcx);
+        swipeRefreshLayout.setOnRefreshListener(this);
         String userid=FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("courselist").document("course").collection("course")
@@ -61,5 +66,11 @@ public class NoticeActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    @Override
+    public void onRefresh() {
+        startActivity(new Intent(getApplicationContext(),NoticeActivity.class));
+        finish();
     }
 }

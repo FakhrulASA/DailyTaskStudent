@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.NoticeActivity">
+    tools:context=".ui.EventActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -18,9 +18,15 @@
         android:textStyle="bold"
         android:textAlignment="textStart"
         android:text="Upcomming Events" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rec_notice"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sraa"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </LinearLayout>

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,11 +25,12 @@ import com.siddiqei.dailytaskbeta.model.NoteModel;
 
 import java.util.ArrayList;
 
-public class NotesActivity extends AppCompatActivity {
+public class NotesActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
     FirebaseAuth firebaseAuth;
     ArrayList<NoteModel> posts=new ArrayList<>();
     NoteAdapter noteAdapter;
     RecyclerView recyclerView;
+    SwipeRefreshLayout swipeRefreshLayout;
     Button add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class NotesActivity extends AppCompatActivity {
         String userid=firebaseAuth.getCurrentUser().getUid();
         recyclerView=findViewById(R.id.note_recycler);
         add=findViewById(R.id.button_add_note);
+        swipeRefreshLayout=findViewById(R.id.sra);
+        swipeRefreshLayout.setOnRefreshListener(this);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,5 +75,11 @@ public class NotesActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    @Override
+    public void onRefresh() {
+        startActivity(new Intent(getApplicationContext(),NotesActivity.class));
+        finish();
     }
 }

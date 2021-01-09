@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,10 +23,11 @@ import com.siddiqei.dailytaskbeta.model.ClassListModel;
 
 import java.util.ArrayList;
 
-public class ClassListActivity extends AppCompatActivity {
+public class ClassListActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
     RecyclerView class_recycle;
     Button addCourse;
     ClassAdapter classAdapter;
+    SwipeRefreshLayout swipeRefreshLayout;
     FirebaseAuth  firebaseAuth;
     ArrayList<ClassListModel> posts=new ArrayList<>();
     @Override
@@ -34,6 +36,8 @@ public class ClassListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_class_list);
         class_recycle=findViewById(R.id.course_recycler);
         addCourse=findViewById(R.id.button_add_course);
+        swipeRefreshLayout=findViewById(R.id.container);
+        swipeRefreshLayout.setOnRefreshListener(this);
         firebaseAuth=FirebaseAuth.getInstance();
         addCourse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,5 +78,11 @@ public class ClassListActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onRefresh() {
+        startActivity(new Intent(getApplicationContext(),ClassListActivity.class));
+        finish();
     }
 }

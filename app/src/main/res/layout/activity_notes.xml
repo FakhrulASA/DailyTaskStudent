@@ -8,14 +8,20 @@
     android:orientation="vertical"
     tools:context=".ui.NotesActivity">
 
-
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/note_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+ >
 
     </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <Button
         android:id="@+id/button_add_note"
